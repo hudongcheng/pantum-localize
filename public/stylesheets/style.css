@@ -1,0 +1,184 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #428bca;
+  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+  margin-bottom: 20px;
+}
+
+/* Nav links */
+.blog-nav {
+
+}
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.float-right {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+  float: right;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  content: " ";
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  border-right:  5px solid transparent;
+  border-left:   5px solid transparent;
+  border-bottom: 5px solid;
+}
+
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+a {
+  color: black;
+}
+
+nav ul{
+    display: -moz-box;
+    display: -webkit-box;
+    list-style:none;
+    list-style-image: url(/images/side.gif);
+    margin-left:-40px;
+}
+li{
+    margin-left:10px;
+    height:20px;
+}
+
+.buy {
+  background-color: green;
+}
+
+.sell {
+  background-color: red;
+}
+
+
+article {
+	float: left-top;
+}
+
+.price-container {
+display: inline-block;
+width: 170px;
+padding: 8px 14px 10px;
+border: 1px;
+background-color: #aaa;
+}
+
+.sell-container {
+background-color: gray;
+color: yellow;
+}
+
+.buy-container {
+background-color: gray;
+color: yellow;
+}
+
+.diff-container {
+background-color: gray;
+color: white;
+}
+
+#sell, #buy {
+color: yellow;
+}
+
+[class*="col-"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+select {
+  width: 60%;
+}
+
+.message {
+  margin-bottom: 5px;
+  background-color: #0f0;
+}
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

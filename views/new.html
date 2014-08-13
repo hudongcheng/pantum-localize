@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}New Post{% endblock %}
+
+{% block content %}
+  <h1>New Post</h1>
+  <p>Create a new post.</p>
+  <form action="/string" method="post">
+    <p><textarea placeholder="Contents" name="en"></textarea></p>
+    <p><textarea placeholder="Contents" name="zh"></textarea></p>
+    <p><textarea placeholder="Contents" name="ar"></textarea></p>
+    <p><textarea placeholder="Contents" name="sv"></textarea></p>
+    <p><textarea placeholder="Contents" name="it"></textarea></p>
+    <p><textarea placeholder="Contents" name="ja"></textarea></p>
+    <p><textarea placeholder="Contents" name="ru"></textarea></p>
+    <p><textarea placeholder="Contents" name="es"></textarea></p>
+    <p><textarea placeholder="Contents" name="fr"></textarea></p>
+    <p><textarea placeholder="Contents" name="no"></textarea></p>
+    <p><input type="submit" value="Create"></p>
+  </form>
+{% endblock %}

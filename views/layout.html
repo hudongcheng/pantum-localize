@@ -1,62 +1,34 @@
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
   <title>{% block title %}Blog{% endblock %}</title>
-  <style>
-    body {
-      padding: 80px;
-      font: 16px Helvetica, Arial;
-    }
 
-    h1 {
-      font-size: 2em;
-    }
+  <!-- Bootstrap core CSS -->
+  <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
 
-    h2 {
-      font-size: 1.2em;
-    }
+  <!-- Custom styles for this template -->
+  <link href="/stylesheets/dashboard.css" rel="stylesheet">
 
-    #posts {
-      margin: 0;
-      padding: 0;
-    }
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    #posts li {
-      margin: 40px 0;
-      padding: 0;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #eee;
-      list-style: none;
-    }
-
-    #posts li:last-child {
-      border-bottom: none;
-    }
-
-    textarea {
-      width: 500px;
-      height: 300px;
-    }
-
-    input[type=text],
-    textarea {
-      border: 1px solid #eee;
-      border-top-color: #ddd;
-      border-left-color: #ddd;
-      border-radius: 2px;
-      padding: 15px;
-      font-size: .8em;
-    }
-
-    input[type=text] {
-      width: 500px;
-    }
-  </style>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-  <section id="content">
+  <div class="container">
     {% block content %}
       <p>Missing content!</p>
     {% endblock %}
-  </section>
+  </div>
 </body>
 </html>

@@ -6,9 +6,11 @@
   "bugs": "https://github.com/zemug/pantum-localize/issues",
   "dependencies": {
     "co-views": "^0.2.0",
+    "co-body": "*",
     "koa": "^0.8.0",
     "koa-route": "^1.1.4",
-    "swig": "*",
+    "koa-static": "*",
+    "swig": "*"
   },
   "devDependencies": {
     "co": "*",
