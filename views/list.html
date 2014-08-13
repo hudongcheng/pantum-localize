@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}Posts{% endblock %}
+
+{% block content %}
+  <h1>Posts</h1>
+  <p>You have <strong>{{ posts.length }}</strong> posts!</p>
+  <p><a href="/post/new">Create a Post</a></p>
+  <ul id="posts">
+    {% for post in posts %}
+      <li>
+        <h2>{{ post.title }}</h2>
+        <p><a href="/post/{{ post.id }}">Read post</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>序号</th>
+        <th>中文</th>
+        <th>英文</th>
+        <th>日文</th>
+        <th>俄文</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>你好</td>
+        <td>hello</td>
+        <td>hello</td>
+        <td>hello</td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}
