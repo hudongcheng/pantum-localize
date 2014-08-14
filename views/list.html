@@ -7,19 +7,13 @@
     <thead>
       <tr>
         <th>#</th>
-        <th>简体中文</th>
-        <th>英文</th>
-        <th>日文</th>
-        <th>俄文</th>
-        <th>阿拉伯语</th>
-        <th>西班牙语</th>
-        <th>法语</th>
-        <th>意大利语</th>
-        <th>挪威语</th>
-        <th>瑞典语</th>
+        {% for lang in languages %}
+        <th>{{ lang.name }}</th>
+        {% endfor %}
       </tr>
     </thead>
     <tbody>
+      <!-- posts和language应顺序保存一致 -->
       {% for post in posts %}
       <tr>
         <td>1</td>
@@ -29,10 +23,10 @@
         <td>{{ post.sv }}</td>
         <td>{{ post.fr }}</td>
         <td>{{ post.it }}</td>
+        <td>{{ post.ja }}</td>
         <td>{{ post.ru }}</td>
         <td>{{ post.no }}</td>
         <td>{{ post.es }}</td>
-        <td>{{ post.ja }}</td>
       </tr>
       {% endfor %}
     </tbody>

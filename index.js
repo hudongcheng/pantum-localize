@@ -20,6 +20,24 @@ app.use(route.post('/string', create));
 //app.use(route.get('/string/delete/:id', export_strings));
 
 var posts = [];
+
+//var languages = {zh:'中文', en:'英文', ar:'阿拉伯语', sv:'瑞士语', fr:'法语',
+//								 it:'意大利语', ja:'日语', ru:'俄语', no:'挪威语', es:'西班牙语'};
+
+//TODO: list.html的table header需要显示语言，
+// posts和language顺序保存一致
+// 是否可以做到灵活的顺序
+var languages = [{code:'zh', name:'中文'},
+	{code:'en', name:'英文'},
+	{code:'ar', name:'阿拉伯语'},
+	{code:'sv', name:'瑞士语'},
+	{code:'fr', name:'法语'},
+	{code:'it', name:'意大利语'},
+	{code:'ja', name:'日语'},
+	{code:'ru', name:'俄语'},
+	{code:'no', name:'挪威语'},
+	{code:'es', name:'西班牙语'}];
+
 posts.push({zh:'zh', en:'en', ar:'ar', sv:'sv', fr:'fr', it:'it', ja:'ja', ru:'ru', no:'no', es:'es'});
 
 /**
@@ -28,7 +46,7 @@ posts.push({zh:'zh', en:'en', ar:'ar', sv:'sv', fr:'fr', it:'it', ja:'ja', ru:'r
 
 function *list() {
 	//this.body = 'list strings';
-	this.body = yield render('list', { posts: posts });
+	this.body = yield render('list', { languages:languages, posts: posts });
 }
 
 
@@ -37,7 +55,7 @@ function *list() {
  */
 
 function *add() {
-  this.body = yield render('new');
+  this.body = yield render('new', { languages: languages});
 }
 
 
